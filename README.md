@@ -1,4 +1,4 @@
-# urlShortener - Encurtador de URLs Serverless - Redirecionamento 🚀
+# Encurtador de URLs Serverless - Redirecionamento 🚀
 
 Este projeto faz parte de um curso gratuito da [Rocketseat](https://github.com/Rocketseat) ministrado pela especialista [Fernanda Kipper](https://github.com/Fernanda-Kipper) utilizando Java.
 
