@@ -71,24 +71,24 @@ O objetivo é oferecer uma solução escalável, de fácil manutenção e com cu
   "expirationTime": "1732225506"
   }
   ```
-  - **Resposta**:
-    - `200: { "code": "273206e1"}`
-    - `500: {"message": "Internal Server Error"}`
+- **Resposta**:
+  - `200: { "code": "273206e1"}`
+  - `500: {"message": "Internal Server Error"}`
 - **Função**:
-    1. Coleta a url e tempo (data) fornecidos.
-    2. Processa as informações e armazena em S3.
-    3. Gera um código de referencia do armazenamento.
+  - Coleta a url e tempo (data) fornecidos.
+  - Processa as informações e armazena em S3.
+  - Gera um código de referencia do armazenamento.
   
 ### Redirecionar URL
 - **Método**: `GET`  
 - **Endpoint**: `/{shortUrlCode}`
 - **Resposta**:
-    - `302: Redireciona para a URL original.`
-    - `410: Indica que a URL expirou.`
+  - `302: Redireciona para a URL original.`
+  - `410: Indica que a URL expirou.`
 - **Função**:
-    1. Recupera os metadados para o código curto fornecido.
-    2. Verifica o tempo de expiração.
-    3. Redireciona ou retorna um erro caso a URL esteja expirada.
+  - Recupera os metadados para o código curto fornecido.
+  - Verifica o tempo de expiração.
+  - Redireciona ou retorna um erro caso a URL esteja expirada.
 
 ## 🌟 Diferenciais
 
